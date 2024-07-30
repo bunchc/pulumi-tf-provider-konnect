@@ -1,0 +1,3311 @@
+{
+    "auto-aliasing": {
+        "resources": {
+            "konnect_api_product": {
+                "current": "konnect:index/apiProduct:ApiProduct",
+                "fields": {
+                    "portal_ids": {
+                        "maxItemsOne": false
+                    },
+                    "portals": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_api_product_document": {
+                "current": "konnect:index/apiProductDocument:ApiProductDocument"
+            },
+            "konnect_api_product_specification": {
+                "current": "konnect:index/apiProductSpecification:ApiProductSpecification"
+            },
+            "konnect_api_product_version": {
+                "current": "konnect:index/apiProductVersion:ApiProductVersion",
+                "fields": {
+                    "portals": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "auth_strategies": {
+                                    "maxItemsOne": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_application_auth_strategy": {
+                "current": "konnect:index/applicationAuthStrategy:ApplicationAuthStrategy",
+                "fields": {
+                    "key_auth": {
+                        "fields": {
+                            "configs": {
+                                "fields": {
+                                    "key_auth": {
+                                        "fields": {
+                                            "key_names": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "openid_connect": {
+                        "fields": {
+                            "configs": {
+                                "fields": {
+                                    "openid_connect": {
+                                        "fields": {
+                                            "auth_methods": {
+                                                "maxItemsOne": false
+                                            },
+                                            "credential_claim": {
+                                                "maxItemsOne": false
+                                            },
+                                            "scopes": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_cloud_gateway_configuration": {
+                "current": "konnect:index/cloudGatewayConfiguration:CloudGatewayConfiguration",
+                "fields": {
+                    "dataplane_group_config": {
+                        "maxItemsOne": false
+                    },
+                    "dataplane_groups": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "egress_ip_addresses": {
+                                    "maxItemsOne": false
+                                },
+                                "private_ip_addresses": {
+                                    "maxItemsOne": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_cloud_gateway_custom_domain": {
+                "current": "konnect:index/cloudGatewayCustomDomain:CloudGatewayCustomDomain"
+            },
+            "konnect_cloud_gateway_network": {
+                "current": "konnect:index/cloudGatewayNetwork:CloudGatewayNetwork",
+                "fields": {
+                    "availability_zones": {
+                        "maxItemsOne": false
+                    },
+                    "firewall": {
+                        "fields": {
+                            "allowed_cidr_blocks": {
+                                "maxItemsOne": false
+                            },
+                            "denied_cidr_blocks": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "provider_metadata": {
+                        "fields": {
+                            "subnet_ids": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_cloud_gateway_transit_gateway": {
+                "current": "konnect:index/cloudGatewayTransitGateway:CloudGatewayTransitGateway",
+                "fields": {
+                    "cidr_blocks": {
+                        "maxItemsOne": false
+                    },
+                    "dns_config": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "domain_proxy_list": {
+                                    "maxItemsOne": false
+                                },
+                                "remote_dns_server_ip_addresses": {
+                                    "maxItemsOne": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_gateway_acl": {
+                "current": "konnect:index/gatewayAcl:GatewayAcl",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_basic_auth": {
+                "current": "konnect:index/gatewayBasicAuth:GatewayBasicAuth",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_ca_certificate": {
+                "current": "konnect:index/gatewayCaCertificate:GatewayCaCertificate",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_certificate": {
+                "current": "konnect:index/gatewayCertificate:GatewayCertificate",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_consumer": {
+                "current": "konnect:index/gatewayConsumer:GatewayConsumer",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_consumer_group": {
+                "current": "konnect:index/gatewayConsumerGroup:GatewayConsumerGroup",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_consumer_group_member": {
+                "current": "konnect:index/gatewayConsumerGroupMember:GatewayConsumerGroupMember"
+            },
+            "konnect_gateway_control_plane": {
+                "current": "konnect:index/gatewayControlPlane:GatewayControlPlane",
+                "fields": {
+                    "proxy_urls": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_control_plane_membership": {
+                "current": "konnect:index/gatewayControlPlaneMembership:GatewayControlPlaneMembership",
+                "fields": {
+                    "members": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_custom_plugin_schema": {
+                "current": "konnect:index/gatewayCustomPluginSchema:GatewayCustomPluginSchema"
+            },
+            "konnect_gateway_data_plane_client_certificate": {
+                "current": "konnect:index/gatewayDataPlaneClientCertificate:GatewayDataPlaneClientCertificate"
+            },
+            "konnect_gateway_hmac_auth": {
+                "current": "konnect:index/gatewayHmacAuth:GatewayHmacAuth",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_jwt": {
+                "current": "konnect:index/gatewayJwt:GatewayJwt",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_key": {
+                "current": "konnect:index/gatewayKey:GatewayKey",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_key_auth": {
+                "current": "konnect:index/gatewayKeyAuth:GatewayKeyAuth",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_key_set": {
+                "current": "konnect:index/gatewayKeySet:GatewayKeySet",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_acl": {
+                "current": "konnect:index/gatewayPluginAcl:GatewayPluginAcl",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow": {
+                                "maxItemsOne": false
+                            },
+                            "deny": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_prompt_decorator": {
+                "current": "konnect:index/gatewayPluginAiPromptDecorator:GatewayPluginAiPromptDecorator",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "prompts": {
+                                "fields": {
+                                    "append": {
+                                        "maxItemsOne": false
+                                    },
+                                    "prepend": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_prompt_guard": {
+                "current": "konnect:index/gatewayPluginAiPromptGuard:GatewayPluginAiPromptGuard",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow_patterns": {
+                                "maxItemsOne": false
+                            },
+                            "deny_patterns": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_prompt_template": {
+                "current": "konnect:index/gatewayPluginAiPromptTemplate:GatewayPluginAiPromptTemplate",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "templates": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_proxy": {
+                "current": "konnect:index/gatewayPluginAiProxy:GatewayPluginAiProxy",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_aws_lambda": {
+                "current": "konnect:index/gatewayPluginAwsLambda:GatewayPluginAwsLambda",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_basic_auth": {
+                "current": "konnect:index/gatewayPluginBasicAuth:GatewayPluginBasicAuth",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_correlation_id": {
+                "current": "konnect:index/gatewayPluginCorrelationId:GatewayPluginCorrelationId",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_cors": {
+                "current": "konnect:index/gatewayPluginCors:GatewayPluginCors",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "exposed_headers": {
+                                "maxItemsOne": false
+                            },
+                            "headers": {
+                                "maxItemsOne": false
+                            },
+                            "methods": {
+                                "maxItemsOne": false
+                            },
+                            "origins": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_exit_transformer": {
+                "current": "konnect:index/gatewayPluginExitTransformer:GatewayPluginExitTransformer",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "functions": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_file_log": {
+                "current": "konnect:index/gatewayPluginFileLog:GatewayPluginFileLog",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ip_restriction": {
+                "current": "konnect:index/gatewayPluginIpRestriction:GatewayPluginIpRestriction",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow": {
+                                "maxItemsOne": false
+                            },
+                            "deny": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_jq": {
+                "current": "konnect:index/gatewayPluginJq:GatewayPluginJq",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "request_if_media_type": {
+                                "maxItemsOne": false
+                            },
+                            "response_if_media_type": {
+                                "maxItemsOne": false
+                            },
+                            "response_if_status_code": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_jwt": {
+                "current": "konnect:index/gatewayPluginJwt:GatewayPluginJwt",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "claims_to_verify": {
+                                "maxItemsOne": false
+                            },
+                            "cookie_names": {
+                                "maxItemsOne": false
+                            },
+                            "header_names": {
+                                "maxItemsOne": false
+                            },
+                            "uri_param_names": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_jwt_signer": {
+                "current": "konnect:index/gatewayPluginJwtSigner:GatewayPluginJwtSigner",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "access_token_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_jwt_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_jwt_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "remove_access_token_claims": {
+                                "maxItemsOne": false
+                            },
+                            "remove_channel_token_claims": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_key_auth": {
+                "current": "konnect:index/gatewayPluginKeyAuth:GatewayPluginKeyAuth",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "key_names": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_oauth2": {
+                "current": "konnect:index/gatewayPluginOauth2:GatewayPluginOauth2",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "scopes": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_openid_connect": {
+                "current": "konnect:index/gatewayPluginOpenidConnect:GatewayPluginOpenidConnect",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "audience": {
+                                "maxItemsOne": false
+                            },
+                            "audience_claim": {
+                                "maxItemsOne": false
+                            },
+                            "audience_required": {
+                                "maxItemsOne": false
+                            },
+                            "auth_methods": {
+                                "maxItemsOne": false
+                            },
+                            "authenticated_groups_claim": {
+                                "maxItemsOne": false
+                            },
+                            "authorization_query_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "authorization_query_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "authorization_query_args_values": {
+                                "maxItemsOne": false
+                            },
+                            "bearer_token_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "client_alg": {
+                                "maxItemsOne": false
+                            },
+                            "client_auth": {
+                                "maxItemsOne": false
+                            },
+                            "client_credentials_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "client_id": {
+                                "maxItemsOne": false
+                            },
+                            "client_jwk": {
+                                "maxItemsOne": false,
+                                "elem": {
+                                    "fields": {
+                                        "key_ops": {
+                                            "maxItemsOne": false
+                                        },
+                                        "x5c": {
+                                            "maxItemsOne": false
+                                        }
+                                    }
+                                }
+                            },
+                            "client_secret": {
+                                "maxItemsOne": false
+                            },
+                            "consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "credential_claim": {
+                                "maxItemsOne": false
+                            },
+                            "disable_session": {
+                                "maxItemsOne": false
+                            },
+                            "discovery_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "discovery_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "domains": {
+                                "maxItemsOne": false
+                            },
+                            "downstream_headers_claims": {
+                                "maxItemsOne": false
+                            },
+                            "downstream_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "extra_jwks_uris": {
+                                "maxItemsOne": false
+                            },
+                            "forbidden_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "groups_claim": {
+                                "maxItemsOne": false
+                            },
+                            "groups_required": {
+                                "maxItemsOne": false
+                            },
+                            "id_token_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "ignore_signature": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_headers_client": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_post_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_post_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_post_args_values": {
+                                "maxItemsOne": false
+                            },
+                            "issuers_allowed": {
+                                "maxItemsOne": false
+                            },
+                            "login_methods": {
+                                "maxItemsOne": false
+                            },
+                            "login_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "login_tokens": {
+                                "maxItemsOne": false
+                            },
+                            "logout_methods": {
+                                "maxItemsOne": false
+                            },
+                            "logout_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "password_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "refresh_token_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "response_type": {
+                                "maxItemsOne": false
+                            },
+                            "roles_claim": {
+                                "maxItemsOne": false
+                            },
+                            "roles_required": {
+                                "maxItemsOne": false
+                            },
+                            "scopes": {
+                                "maxItemsOne": false
+                            },
+                            "scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "session_redis_cluster_nodes": {
+                                "maxItemsOne": false
+                            },
+                            "session_request_headers": {
+                                "maxItemsOne": false
+                            },
+                            "session_response_headers": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_client": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_grants": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_replay": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "token_post_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "token_post_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "token_post_args_values": {
+                                "maxItemsOne": false
+                            },
+                            "unauthorized_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "unexpected_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "upstream_headers_claims": {
+                                "maxItemsOne": false
+                            },
+                            "upstream_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_headers_client": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_query_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_query_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_query_args_values": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_opentelemetry": {
+                "current": "konnect:index/gatewayPluginOpentelemetry:GatewayPluginOpentelemetry",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "propagation": {
+                                "fields": {
+                                    "clear": {
+                                        "maxItemsOne": false
+                                    },
+                                    "extract": {
+                                        "maxItemsOne": false
+                                    },
+                                    "inject": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_post_function": {
+                "current": "konnect:index/gatewayPluginPostFunction:GatewayPluginPostFunction",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "access": {
+                                "maxItemsOne": false
+                            },
+                            "body_filter": {
+                                "maxItemsOne": false
+                            },
+                            "certificate": {
+                                "maxItemsOne": false
+                            },
+                            "header_filter": {
+                                "maxItemsOne": false
+                            },
+                            "log": {
+                                "maxItemsOne": false
+                            },
+                            "rewrite": {
+                                "maxItemsOne": false
+                            },
+                            "ws_client_frame": {
+                                "maxItemsOne": false
+                            },
+                            "ws_close": {
+                                "maxItemsOne": false
+                            },
+                            "ws_handshake": {
+                                "maxItemsOne": false
+                            },
+                            "ws_upstream_frame": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_pre_function": {
+                "current": "konnect:index/gatewayPluginPreFunction:GatewayPluginPreFunction",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "access": {
+                                "maxItemsOne": false
+                            },
+                            "body_filter": {
+                                "maxItemsOne": false
+                            },
+                            "certificate": {
+                                "maxItemsOne": false
+                            },
+                            "header_filter": {
+                                "maxItemsOne": false
+                            },
+                            "log": {
+                                "maxItemsOne": false
+                            },
+                            "rewrite": {
+                                "maxItemsOne": false
+                            },
+                            "ws_client_frame": {
+                                "maxItemsOne": false
+                            },
+                            "ws_close": {
+                                "maxItemsOne": false
+                            },
+                            "ws_handshake": {
+                                "maxItemsOne": false
+                            },
+                            "ws_upstream_frame": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_prometheus": {
+                "current": "konnect:index/gatewayPluginPrometheus:GatewayPluginPrometheus",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_proxy_cache": {
+                "current": "konnect:index/gatewayPluginProxyCache:GatewayPluginProxyCache",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "content_type": {
+                                "maxItemsOne": false
+                            },
+                            "request_method": {
+                                "maxItemsOne": false
+                            },
+                            "response_code": {
+                                "maxItemsOne": false
+                            },
+                            "vary_headers": {
+                                "maxItemsOne": false
+                            },
+                            "vary_query_params": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_rate_limiting": {
+                "current": "konnect:index/gatewayPluginRateLimiting:GatewayPluginRateLimiting",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_rate_limiting_advanced": {
+                "current": "konnect:index/gatewayPluginRateLimitingAdvanced:GatewayPluginRateLimitingAdvanced",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "consumer_groups": {
+                                "maxItemsOne": false
+                            },
+                            "limit": {
+                                "maxItemsOne": false
+                            },
+                            "redis": {
+                                "fields": {
+                                    "cluster_addresses": {
+                                        "maxItemsOne": false
+                                    },
+                                    "sentinel_addresses": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "window_size": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_request_termination": {
+                "current": "konnect:index/gatewayPluginRequestTermination:GatewayPluginRequestTermination",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_request_transformer": {
+                "current": "konnect:index/gatewayPluginRequestTransformer:GatewayPluginRequestTransformer",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_request_transformer_advanced": {
+                "current": "konnect:index/gatewayPluginRequestTransformerAdvanced:GatewayPluginRequestTransformerAdvanced",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "allow": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_response_transformer": {
+                "current": "konnect:index/gatewayPluginResponseTransformer:GatewayPluginResponseTransformer",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_response_transformer_advanced": {
+                "current": "konnect:index/gatewayPluginResponseTransformerAdvanced:GatewayPluginResponseTransformerAdvanced",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "allow": {
+                                "fields": {
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "transform": {
+                                "fields": {
+                                    "functions": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_saml": {
+                "current": "konnect:index/gatewayPluginSaml:GatewayPluginSaml",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "session_redis_cluster_nodes": {
+                                "maxItemsOne": false
+                            },
+                            "session_request_headers": {
+                                "maxItemsOne": false
+                            },
+                            "session_response_headers": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_statsd": {
+                "current": "konnect:index/gatewayPluginStatsd:GatewayPluginStatsd",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow_status_codes": {
+                                "maxItemsOne": false
+                            },
+                            "metrics": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_route": {
+                "current": "konnect:index/gatewayRoute:GatewayRoute",
+                "fields": {
+                    "destinations": {
+                        "maxItemsOne": false
+                    },
+                    "hosts": {
+                        "maxItemsOne": false
+                    },
+                    "methods": {
+                        "maxItemsOne": false
+                    },
+                    "paths": {
+                        "maxItemsOne": false
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "snis": {
+                        "maxItemsOne": false
+                    },
+                    "sources": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_service": {
+                "current": "konnect:index/gatewayService:GatewayService",
+                "fields": {
+                    "ca_certificates": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_sni": {
+                "current": "konnect:index/gatewaySni:GatewaySni",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_target": {
+                "current": "konnect:index/gatewayTarget:GatewayTarget",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_upstream": {
+                "current": "konnect:index/gatewayUpstream:GatewayUpstream",
+                "fields": {
+                    "healthchecks": {
+                        "fields": {
+                            "active": {
+                                "fields": {
+                                    "healthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    },
+                                    "unhealthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "passive": {
+                                "fields": {
+                                    "healthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    },
+                                    "unhealthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_vault": {
+                "current": "konnect:index/gatewayVault:GatewayVault",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_mesh_control_plane": {
+                "current": "konnect:index/meshControlPlane:MeshControlPlane"
+            },
+            "konnect_portal": {
+                "current": "konnect:index/portal:Portal"
+            },
+            "konnect_portal_appearance": {
+                "current": "konnect:index/portalAppearance:PortalAppearance"
+            },
+            "konnect_portal_auth": {
+                "current": "konnect:index/portalAuth:PortalAuth",
+                "fields": {
+                    "oidc_config": {
+                        "fields": {
+                            "scopes": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "oidc_scopes": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_portal_product_version": {
+                "current": "konnect:index/portalProductVersion:PortalProductVersion",
+                "fields": {
+                    "auth_strategies": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "client_credentials": {
+                                    "fields": {
+                                        "auth_methods": {
+                                            "maxItemsOne": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "auth_strategy_ids": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_serverless_cloud_gateway": {
+                "current": "konnect:index/serverlessCloudGateway:ServerlessCloudGateway"
+            },
+            "konnect_system_account": {
+                "current": "konnect:index/systemAccount:SystemAccount"
+            },
+            "konnect_system_account_access_token": {
+                "current": "konnect:index/systemAccountAccessToken:SystemAccountAccessToken"
+            },
+            "konnect_system_account_role": {
+                "current": "konnect:index/systemAccountRole:SystemAccountRole"
+            },
+            "konnect_system_account_team": {
+                "current": "konnect:index/systemAccountTeam:SystemAccountTeam"
+            },
+            "konnect_team": {
+                "current": "konnect:index/team:Team"
+            },
+            "konnect_team_role": {
+                "current": "konnect:index/teamRole:TeamRole"
+            },
+            "konnect_team_user": {
+                "current": "konnect:index/teamUser:TeamUser"
+            }
+        },
+        "datasources": {
+            "konnect_api_product": {
+                "current": "konnect:index/getApiProduct:getApiProduct",
+                "fields": {
+                    "portal_ids": {
+                        "maxItemsOne": false
+                    },
+                    "portals": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_api_product_document": {
+                "current": "konnect:index/getApiProductDocument:getApiProductDocument"
+            },
+            "konnect_api_product_specification": {
+                "current": "konnect:index/getApiProductSpecification:getApiProductSpecification"
+            },
+            "konnect_api_product_version": {
+                "current": "konnect:index/getApiProductVersion:getApiProductVersion",
+                "fields": {
+                    "portals": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "auth_strategies": {
+                                    "maxItemsOne": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_application_auth_strategy": {
+                "current": "konnect:index/getApplicationAuthStrategy:getApplicationAuthStrategy",
+                "fields": {
+                    "key_auth": {
+                        "fields": {
+                            "configs": {
+                                "fields": {
+                                    "key_auth": {
+                                        "fields": {
+                                            "key_names": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "openid_connect": {
+                        "fields": {
+                            "configs": {
+                                "fields": {
+                                    "openid_connect": {
+                                        "fields": {
+                                            "auth_methods": {
+                                                "maxItemsOne": false
+                                            },
+                                            "credential_claim": {
+                                                "maxItemsOne": false
+                                            },
+                                            "scopes": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_cloud_gateway_configuration": {
+                "current": "konnect:index/getCloudGatewayConfiguration:getCloudGatewayConfiguration",
+                "fields": {
+                    "dataplane_group_config": {
+                        "maxItemsOne": false
+                    },
+                    "dataplane_groups": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "egress_ip_addresses": {
+                                    "maxItemsOne": false
+                                },
+                                "private_ip_addresses": {
+                                    "maxItemsOne": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_cloud_gateway_custom_domain": {
+                "current": "konnect:index/getCloudGatewayCustomDomain:getCloudGatewayCustomDomain"
+            },
+            "konnect_cloud_gateway_network": {
+                "current": "konnect:index/getCloudGatewayNetwork:getCloudGatewayNetwork",
+                "fields": {
+                    "availability_zones": {
+                        "maxItemsOne": false
+                    },
+                    "firewall": {
+                        "fields": {
+                            "allowed_cidr_blocks": {
+                                "maxItemsOne": false
+                            },
+                            "denied_cidr_blocks": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "provider_metadata": {
+                        "fields": {
+                            "subnet_ids": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_cloud_gateway_provider_account_list": {
+                "current": "konnect:index/getCloudGatewayProviderAccountList:getCloudGatewayProviderAccountList",
+                "fields": {
+                    "data": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_cloud_gateway_transit_gateway": {
+                "current": "konnect:index/getCloudGatewayTransitGateway:getCloudGatewayTransitGateway",
+                "fields": {
+                    "cidr_blocks": {
+                        "maxItemsOne": false
+                    },
+                    "dns_config": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "domain_proxy_list": {
+                                    "maxItemsOne": false
+                                },
+                                "remote_dns_server_ip_addresses": {
+                                    "maxItemsOne": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_gateway_acl": {
+                "current": "konnect:index/getGatewayAcl:getGatewayAcl",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_basic_auth": {
+                "current": "konnect:index/getGatewayBasicAuth:getGatewayBasicAuth",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_ca_certificate": {
+                "current": "konnect:index/getGatewayCaCertificate:getGatewayCaCertificate",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_certificate": {
+                "current": "konnect:index/getGatewayCertificate:getGatewayCertificate",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_consumer": {
+                "current": "konnect:index/getGatewayConsumer:getGatewayConsumer",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_consumer_group": {
+                "current": "konnect:index/getGatewayConsumerGroup:getGatewayConsumerGroup",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_control_plane": {
+                "current": "konnect:index/getGatewayControlPlane:getGatewayControlPlane"
+            },
+            "konnect_gateway_custom_plugin_schema": {
+                "current": "konnect:index/getGatewayCustomPluginSchema:getGatewayCustomPluginSchema"
+            },
+            "konnect_gateway_data_plane_client_certificate": {
+                "current": "konnect:index/getGatewayDataPlaneClientCertificate:getGatewayDataPlaneClientCertificate"
+            },
+            "konnect_gateway_hmac_auth": {
+                "current": "konnect:index/getGatewayHmacAuth:getGatewayHmacAuth",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_jwt": {
+                "current": "konnect:index/getGatewayJwt:getGatewayJwt",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_key": {
+                "current": "konnect:index/getGatewayKey:getGatewayKey",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_key_auth": {
+                "current": "konnect:index/getGatewayKeyAuth:getGatewayKeyAuth",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_key_set": {
+                "current": "konnect:index/getGatewayKeySet:getGatewayKeySet",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_acl": {
+                "current": "konnect:index/getGatewayPluginAcl:getGatewayPluginAcl",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow": {
+                                "maxItemsOne": false
+                            },
+                            "deny": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_prompt_decorator": {
+                "current": "konnect:index/getGatewayPluginAiPromptDecorator:getGatewayPluginAiPromptDecorator",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "prompts": {
+                                "fields": {
+                                    "append": {
+                                        "maxItemsOne": false
+                                    },
+                                    "prepend": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_prompt_guard": {
+                "current": "konnect:index/getGatewayPluginAiPromptGuard:getGatewayPluginAiPromptGuard",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow_patterns": {
+                                "maxItemsOne": false
+                            },
+                            "deny_patterns": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_prompt_template": {
+                "current": "konnect:index/getGatewayPluginAiPromptTemplate:getGatewayPluginAiPromptTemplate",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "templates": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ai_proxy": {
+                "current": "konnect:index/getGatewayPluginAiProxy:getGatewayPluginAiProxy",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_aws_lambda": {
+                "current": "konnect:index/getGatewayPluginAwsLambda:getGatewayPluginAwsLambda",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_basic_auth": {
+                "current": "konnect:index/getGatewayPluginBasicAuth:getGatewayPluginBasicAuth",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_correlation_id": {
+                "current": "konnect:index/getGatewayPluginCorrelationId:getGatewayPluginCorrelationId",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_cors": {
+                "current": "konnect:index/getGatewayPluginCors:getGatewayPluginCors",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "exposed_headers": {
+                                "maxItemsOne": false
+                            },
+                            "headers": {
+                                "maxItemsOne": false
+                            },
+                            "methods": {
+                                "maxItemsOne": false
+                            },
+                            "origins": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_exit_transformer": {
+                "current": "konnect:index/getGatewayPluginExitTransformer:getGatewayPluginExitTransformer",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "functions": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_file_log": {
+                "current": "konnect:index/getGatewayPluginFileLog:getGatewayPluginFileLog",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_ip_restriction": {
+                "current": "konnect:index/getGatewayPluginIpRestriction:getGatewayPluginIpRestriction",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow": {
+                                "maxItemsOne": false
+                            },
+                            "deny": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_jq": {
+                "current": "konnect:index/getGatewayPluginJq:getGatewayPluginJq",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "request_if_media_type": {
+                                "maxItemsOne": false
+                            },
+                            "response_if_media_type": {
+                                "maxItemsOne": false
+                            },
+                            "response_if_status_code": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_jwt": {
+                "current": "konnect:index/getGatewayPluginJwt:getGatewayPluginJwt",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "claims_to_verify": {
+                                "maxItemsOne": false
+                            },
+                            "cookie_names": {
+                                "maxItemsOne": false
+                            },
+                            "header_names": {
+                                "maxItemsOne": false
+                            },
+                            "uri_param_names": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_jwt_signer": {
+                "current": "konnect:index/getGatewayPluginJwtSigner:getGatewayPluginJwtSigner",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "access_token_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_jwt_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_introspection_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "access_token_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_jwt_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_introspection_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "channel_token_scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "remove_access_token_claims": {
+                                "maxItemsOne": false
+                            },
+                            "remove_channel_token_claims": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_key_auth": {
+                "current": "konnect:index/getGatewayPluginKeyAuth:getGatewayPluginKeyAuth",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "key_names": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_oauth2": {
+                "current": "konnect:index/getGatewayPluginOauth2:getGatewayPluginOauth2",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "scopes": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_openid_connect": {
+                "current": "konnect:index/getGatewayPluginOpenidConnect:getGatewayPluginOpenidConnect",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "audience": {
+                                "maxItemsOne": false
+                            },
+                            "audience_claim": {
+                                "maxItemsOne": false
+                            },
+                            "audience_required": {
+                                "maxItemsOne": false
+                            },
+                            "auth_methods": {
+                                "maxItemsOne": false
+                            },
+                            "authenticated_groups_claim": {
+                                "maxItemsOne": false
+                            },
+                            "authorization_query_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "authorization_query_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "authorization_query_args_values": {
+                                "maxItemsOne": false
+                            },
+                            "bearer_token_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "client_alg": {
+                                "maxItemsOne": false
+                            },
+                            "client_auth": {
+                                "maxItemsOne": false
+                            },
+                            "client_credentials_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "client_id": {
+                                "maxItemsOne": false
+                            },
+                            "client_jwk": {
+                                "maxItemsOne": false,
+                                "elem": {
+                                    "fields": {
+                                        "key_ops": {
+                                            "maxItemsOne": false
+                                        },
+                                        "x5c": {
+                                            "maxItemsOne": false
+                                        }
+                                    }
+                                }
+                            },
+                            "client_secret": {
+                                "maxItemsOne": false
+                            },
+                            "consumer_by": {
+                                "maxItemsOne": false
+                            },
+                            "consumer_claim": {
+                                "maxItemsOne": false
+                            },
+                            "credential_claim": {
+                                "maxItemsOne": false
+                            },
+                            "disable_session": {
+                                "maxItemsOne": false
+                            },
+                            "discovery_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "discovery_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "domains": {
+                                "maxItemsOne": false
+                            },
+                            "downstream_headers_claims": {
+                                "maxItemsOne": false
+                            },
+                            "downstream_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "extra_jwks_uris": {
+                                "maxItemsOne": false
+                            },
+                            "forbidden_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "groups_claim": {
+                                "maxItemsOne": false
+                            },
+                            "groups_required": {
+                                "maxItemsOne": false
+                            },
+                            "id_token_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "ignore_signature": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_headers_client": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_post_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_post_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "introspection_post_args_values": {
+                                "maxItemsOne": false
+                            },
+                            "issuers_allowed": {
+                                "maxItemsOne": false
+                            },
+                            "login_methods": {
+                                "maxItemsOne": false
+                            },
+                            "login_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "login_tokens": {
+                                "maxItemsOne": false
+                            },
+                            "logout_methods": {
+                                "maxItemsOne": false
+                            },
+                            "logout_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "password_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "refresh_token_param_type": {
+                                "maxItemsOne": false
+                            },
+                            "response_type": {
+                                "maxItemsOne": false
+                            },
+                            "roles_claim": {
+                                "maxItemsOne": false
+                            },
+                            "roles_required": {
+                                "maxItemsOne": false
+                            },
+                            "scopes": {
+                                "maxItemsOne": false
+                            },
+                            "scopes_claim": {
+                                "maxItemsOne": false
+                            },
+                            "scopes_required": {
+                                "maxItemsOne": false
+                            },
+                            "session_redis_cluster_nodes": {
+                                "maxItemsOne": false
+                            },
+                            "session_request_headers": {
+                                "maxItemsOne": false
+                            },
+                            "session_response_headers": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_client": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_grants": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_replay": {
+                                "maxItemsOne": false
+                            },
+                            "token_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "token_post_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "token_post_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "token_post_args_values": {
+                                "maxItemsOne": false
+                            },
+                            "unauthorized_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "unexpected_redirect_uri": {
+                                "maxItemsOne": false
+                            },
+                            "upstream_headers_claims": {
+                                "maxItemsOne": false
+                            },
+                            "upstream_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_headers_client": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_headers_names": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_headers_values": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_query_args_client": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_query_args_names": {
+                                "maxItemsOne": false
+                            },
+                            "userinfo_query_args_values": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_opentelemetry": {
+                "current": "konnect:index/getGatewayPluginOpentelemetry:getGatewayPluginOpentelemetry",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "propagation": {
+                                "fields": {
+                                    "clear": {
+                                        "maxItemsOne": false
+                                    },
+                                    "extract": {
+                                        "maxItemsOne": false
+                                    },
+                                    "inject": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_post_function": {
+                "current": "konnect:index/getGatewayPluginPostFunction:getGatewayPluginPostFunction",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "access": {
+                                "maxItemsOne": false
+                            },
+                            "body_filter": {
+                                "maxItemsOne": false
+                            },
+                            "certificate": {
+                                "maxItemsOne": false
+                            },
+                            "header_filter": {
+                                "maxItemsOne": false
+                            },
+                            "log": {
+                                "maxItemsOne": false
+                            },
+                            "rewrite": {
+                                "maxItemsOne": false
+                            },
+                            "ws_client_frame": {
+                                "maxItemsOne": false
+                            },
+                            "ws_close": {
+                                "maxItemsOne": false
+                            },
+                            "ws_handshake": {
+                                "maxItemsOne": false
+                            },
+                            "ws_upstream_frame": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_pre_function": {
+                "current": "konnect:index/getGatewayPluginPreFunction:getGatewayPluginPreFunction",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "access": {
+                                "maxItemsOne": false
+                            },
+                            "body_filter": {
+                                "maxItemsOne": false
+                            },
+                            "certificate": {
+                                "maxItemsOne": false
+                            },
+                            "header_filter": {
+                                "maxItemsOne": false
+                            },
+                            "log": {
+                                "maxItemsOne": false
+                            },
+                            "rewrite": {
+                                "maxItemsOne": false
+                            },
+                            "ws_client_frame": {
+                                "maxItemsOne": false
+                            },
+                            "ws_close": {
+                                "maxItemsOne": false
+                            },
+                            "ws_handshake": {
+                                "maxItemsOne": false
+                            },
+                            "ws_upstream_frame": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_prometheus": {
+                "current": "konnect:index/getGatewayPluginPrometheus:getGatewayPluginPrometheus",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_proxy_cache": {
+                "current": "konnect:index/getGatewayPluginProxyCache:getGatewayPluginProxyCache",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "content_type": {
+                                "maxItemsOne": false
+                            },
+                            "request_method": {
+                                "maxItemsOne": false
+                            },
+                            "response_code": {
+                                "maxItemsOne": false
+                            },
+                            "vary_headers": {
+                                "maxItemsOne": false
+                            },
+                            "vary_query_params": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_rate_limiting": {
+                "current": "konnect:index/getGatewayPluginRateLimiting:getGatewayPluginRateLimiting",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_rate_limiting_advanced": {
+                "current": "konnect:index/getGatewayPluginRateLimitingAdvanced:getGatewayPluginRateLimitingAdvanced",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "consumer_groups": {
+                                "maxItemsOne": false
+                            },
+                            "limit": {
+                                "maxItemsOne": false
+                            },
+                            "redis": {
+                                "fields": {
+                                    "cluster_addresses": {
+                                        "maxItemsOne": false
+                                    },
+                                    "sentinel_addresses": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "window_size": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_request_termination": {
+                "current": "konnect:index/getGatewayPluginRequestTermination:getGatewayPluginRequestTermination",
+                "fields": {
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_request_transformer": {
+                "current": "konnect:index/getGatewayPluginRequestTransformer:getGatewayPluginRequestTransformer",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_request_transformer_advanced": {
+                "current": "konnect:index/getGatewayPluginRequestTransformerAdvanced:getGatewayPluginRequestTransformerAdvanced",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "allow": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "body": {
+                                        "maxItemsOne": false
+                                    },
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    },
+                                    "querystring": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_response_transformer": {
+                "current": "konnect:index/getGatewayPluginResponseTransformer:getGatewayPluginResponseTransformer",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_response_transformer_advanced": {
+                "current": "konnect:index/getGatewayPluginResponseTransformerAdvanced:getGatewayPluginResponseTransformerAdvanced",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "add": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "allow": {
+                                "fields": {
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "append": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "remove": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "rename": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "replace": {
+                                "fields": {
+                                    "headers": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json_types": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            },
+                            "transform": {
+                                "fields": {
+                                    "functions": {
+                                        "maxItemsOne": false
+                                    },
+                                    "if_status": {
+                                        "maxItemsOne": false
+                                    },
+                                    "json": {
+                                        "maxItemsOne": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_saml": {
+                "current": "konnect:index/getGatewayPluginSaml:getGatewayPluginSaml",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "session_redis_cluster_nodes": {
+                                "maxItemsOne": false
+                            },
+                            "session_request_headers": {
+                                "maxItemsOne": false
+                            },
+                            "session_response_headers": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_plugin_statsd": {
+                "current": "konnect:index/getGatewayPluginStatsd:getGatewayPluginStatsd",
+                "fields": {
+                    "config": {
+                        "fields": {
+                            "allow_status_codes": {
+                                "maxItemsOne": false
+                            },
+                            "metrics": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_route": {
+                "current": "konnect:index/getGatewayRoute:getGatewayRoute",
+                "fields": {
+                    "destinations": {
+                        "maxItemsOne": false
+                    },
+                    "hosts": {
+                        "maxItemsOne": false
+                    },
+                    "methods": {
+                        "maxItemsOne": false
+                    },
+                    "paths": {
+                        "maxItemsOne": false
+                    },
+                    "protocols": {
+                        "maxItemsOne": false
+                    },
+                    "snis": {
+                        "maxItemsOne": false
+                    },
+                    "sources": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_service": {
+                "current": "konnect:index/getGatewayService:getGatewayService",
+                "fields": {
+                    "ca_certificates": {
+                        "maxItemsOne": false
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_sni": {
+                "current": "konnect:index/getGatewaySni:getGatewaySni",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_target": {
+                "current": "konnect:index/getGatewayTarget:getGatewayTarget",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_upstream": {
+                "current": "konnect:index/getGatewayUpstream:getGatewayUpstream",
+                "fields": {
+                    "healthchecks": {
+                        "fields": {
+                            "active": {
+                                "fields": {
+                                    "healthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    },
+                                    "unhealthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "passive": {
+                                "fields": {
+                                    "healthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    },
+                                    "unhealthy": {
+                                        "fields": {
+                                            "http_statuses": {
+                                                "maxItemsOne": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_gateway_vault": {
+                "current": "konnect:index/getGatewayVault:getGatewayVault",
+                "fields": {
+                    "tags": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_mesh_control_plane": {
+                "current": "konnect:index/getMeshControlPlane:getMeshControlPlane"
+            },
+            "konnect_portal": {
+                "current": "konnect:index/getPortal:getPortal"
+            },
+            "konnect_portal_appearance": {
+                "current": "konnect:index/getPortalAppearance:getPortalAppearance"
+            },
+            "konnect_portal_auth": {
+                "current": "konnect:index/getPortalAuth:getPortalAuth",
+                "fields": {
+                    "oidc_config": {
+                        "fields": {
+                            "scopes": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_portal_list": {
+                "current": "konnect:index/getPortalList:getPortalList",
+                "fields": {
+                    "data": {
+                        "maxItemsOne": false
+                    }
+                }
+            },
+            "konnect_portal_product_version": {
+                "current": "konnect:index/getPortalProductVersion:getPortalProductVersion",
+                "fields": {
+                    "auth_strategies": {
+                        "maxItemsOne": false,
+                        "elem": {
+                            "fields": {
+                                "client_credentials": {
+                                    "fields": {
+                                        "auth_methods": {
+                                            "maxItemsOne": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "konnect_serverless_cloud_gateway": {
+                "current": "konnect:index/getServerlessCloudGateway:getServerlessCloudGateway"
+            },
+            "konnect_system_account": {
+                "current": "konnect:index/getSystemAccount:getSystemAccount"
+            },
+            "konnect_system_account_access_token": {
+                "current": "konnect:index/getSystemAccountAccessToken:getSystemAccountAccessToken"
+            },
+            "konnect_team": {
+                "current": "konnect:index/getTeam:getTeam"
+            }
+        }
+    },
+    "auto-settings": {}
+}

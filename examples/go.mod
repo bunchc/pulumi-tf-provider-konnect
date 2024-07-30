@@ -1,3 +1,3 @@
-module github.com/pulumi/pulumi-xyz/examples
+module github.com/bunchc/pulumi-tf-provider-konnect/examples
 
 go 1.21
